@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mediumseagreen"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.skin.skinvalue.activity.SplashActivity">
+
+
+
+<!-- This FrameLayout insets its children based on system windows using
+     android:fitsSystemWindows. -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pic_main"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/largetextsize"
+        android:padding="@dimen/paddingsize"
+        android:textStyle="bold"
+        android:text="@string/app_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/logintextsize"
+        android:padding="@dimen/paddingsize"
+        android:layout_marginBottom="@dimen/titlebarheight"
+        android:textStyle="bold"
+        android:text="@string/logoalert"/>
+
+</LinearLayout>
+
