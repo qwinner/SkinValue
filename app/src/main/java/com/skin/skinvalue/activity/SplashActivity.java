@@ -18,8 +18,8 @@ public class SplashActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getWindow().setBackgroundDrawableResource(R.drawable.splash);
 
-        final Intent intent = new Intent(SplashActivity.this,MainActivity.class);
-        intent.setClass(getApplication(), MainActivity.class);
+        final Intent intent = new Intent(SplashActivity.this,PullToRefreshActivity.class);
+        intent.setClass(getApplication(), PullToRefreshActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         new Thread(new Runnable() {
 
