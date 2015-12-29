@@ -10,13 +10,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.skin.skinvalue.R;
+import com.skin.skinvalue.fragment.homeFragment;
 import com.skin.skinvalue.pullRefreshFragment.ListViewFragment;
 import com.skin.skinvalue.pullRefreshFragment.RecyclerViewFragment;
 
 
-/**
- * Created by Oleksii Shliama.
- */
+
 public class PullToRefreshActivity extends AppCompatActivity {
 
     @Override
@@ -47,16 +46,19 @@ public class PullToRefreshActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return new ListViewFragment();
+                    return new homeFragment();
                 case 1:
-                default:
+                    return new ListViewFragment();
+                case 2:
                     return new RecyclerViewFragment();
+                default:
+                    return new homeFragment();
             }
         }
 
         @Override
         public int getCount() {
-            return 2;
+            return 3;
         }
 
         @Override
@@ -65,8 +67,9 @@ public class PullToRefreshActivity extends AppCompatActivity {
                 case 0:
                     return "首页";
                 case 1:
+                    return "历史数据";
                 default:
-                    return "历史记录";
+                    return "设置";
             }
         }
     }

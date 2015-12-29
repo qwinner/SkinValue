@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">人体面部皮肤评价系统</string>
     <string name="logoalert">我的皮肤我知道</string>
+
+    <string name="waterhave">水分含量</string>
+    <string name="waterlose">水分散失</string>
+    <string name="oil">皮肤油脂</string>
+    <string name="ph">皮肤ph值</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
