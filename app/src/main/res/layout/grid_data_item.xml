@@ -10,6 +10,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="4"
         android:text="head"
+        android:textColor="@color/contents_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_gravity="center_horizontal"/>
     <TextView
         android:id="@+id/gridItem1"
@@ -17,6 +19,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="4"
         android:text="head"
+        android:textColor="@color/contents_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_gravity="center_horizontal"/>
     <TextView
         android:id="@+id/gridItem2"
@@ -24,6 +28,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="4"
         android:text="head"
+        android:textColor="@color/contents_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_gravity="center_horizontal"/>
     <TextView
         android:id="@+id/gridItem3"
@@ -31,6 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="4"
         android:text="head"
+        android:textColor="@color/contents_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_gravity="center_horizontal"/>
     <TextView
         android:id="@+id/gridItem4"
@@ -38,5 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="4"
         android:text="head"
+        android:textColor="@color/contents_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_gravity="center_horizontal"/>
 </LinearLayout>

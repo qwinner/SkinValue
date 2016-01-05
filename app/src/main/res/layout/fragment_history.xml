@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/result_minor_text"
+    android:background="@color/rippelColor"
     tools:context="com.skin.skinvalue.fragment.HistoryFragment">
 
 

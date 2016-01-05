@@ -21,6 +21,7 @@ import android.widget.TextView;
 
 import com.skin.skinvalue.R;
 import com.skin.skinvalue.common.gridDataItem;
+import com.skin.skinvalue.db.skindataDB;
 
 
 import java.io.File;
@@ -50,7 +51,47 @@ public class HistoryFragment extends Fragment {
         hm.item4 = "皮肤PH值";
         data.add(hm);
 
-    for(int i=0; i<5; i++){}
+        gridDataItem hmt1 = new gridDataItem();
+        hmt1.head = "张三";
+        hmt1.item1 = "26.8";
+        hmt1.item2 = "28.89";
+        hmt1.item3 = "5";
+        hmt1.item4 = "6.0";
+        data.add(hmt1);
+        gridDataItem hmt2 = new gridDataItem();
+        hmt2.head = "李四";
+        hmt2.item1 = "83.26";
+        hmt2.item2 = "39.15";
+        hmt2.item3 = "60";
+        hmt2.item4 = "4.8";
+        data.add(hmt2);
+        gridDataItem hmt3 = new gridDataItem();
+        hmt3.head = "王五";
+        hmt3.item1 = "22.16";
+        hmt3.item2 = "21.65";
+        hmt3.item3 = "49";
+        hmt3.item4 = "5.9";
+        data.add(hmt3);
+        gridDataItem hmt4 = new gridDataItem();
+        hmt4.head = "赵六";
+        hmt4.item1 = "25.66";
+        hmt4.item2 = "30.03";
+        hmt4.item3 = "68";
+        hmt4.item4 = "5.2";
+        data.add(hmt4);
+
+
+        List<skindataDB> books = skindataDB.listAll(skindataDB.class);
+        for (int i=0;i < books.size();++i){
+            gridDataItem hm1 = new gridDataItem();
+            hm1.head = books.get(i).head;
+            hm1.item1 = books.get(i).item1;
+            hm1.item2 = books.get(i).item2;
+            hm1.item3 = books.get(i).item3;
+            hm1.item4 = books.get(i).item4;
+            data.add(hm);
+        }
+
         gridView.setAdapter(new GridAdapter(this.getContext(),R.layout.grid_data_item, data));
     }
 

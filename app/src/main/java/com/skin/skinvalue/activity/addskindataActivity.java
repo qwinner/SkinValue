@@ -13,6 +13,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.skin.skinvalue.R;
+import com.skin.skinvalue.db.skindataDB;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +38,8 @@ public class addskindataActivity extends AppCompatActivity  {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                skindataDB book = new skindataDB("head", "2", "2", "2", "2");
+//                book.save();
                 setResult(100);
                 finish();
             }

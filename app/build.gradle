@@ -35,4 +35,5 @@ dependencies {
     compile 'com.android.support:design:23.1.1'
     compile 'com.android.support:support-v4:23.1.1'
     compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
+    compile 'com.github.satyan:sugar:1.4'
 }
