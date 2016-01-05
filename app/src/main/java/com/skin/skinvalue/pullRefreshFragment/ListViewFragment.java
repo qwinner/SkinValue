@@ -77,7 +77,7 @@ public class ListViewFragment extends BaseRefreshFragment {
         ArrayList<Entry> e1 = new ArrayList<Entry>();
 
         for (int i = 0; i < 5; i++) {
-            e1.add(new Entry((int) (Math.random() * 65) + 40, i));
+            e1.add(new Entry((int) (Math.random() * 65) + 10, i));
         }
 
         LineDataSet d1 = new LineDataSet(e1, "您的数据");
@@ -89,7 +89,7 @@ public class ListViewFragment extends BaseRefreshFragment {
         ArrayList<Entry> e2 = new ArrayList<Entry>();
 
         for (int i = 0; i < 5; i++) {
-            e2.add(new Entry(e1.get(i).getVal() - 30, i));
+            e2.add(new Entry(e1.get(i).getVal() - (13-i*2), i));
         }
 
         LineDataSet d2 = new LineDataSet(e2, "I优级均值");

@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.skin.skinvalue.R;
+import com.skin.skinvalue.fragment.HistoryFragment;
 import com.skin.skinvalue.fragment.homeFragment;
 import com.skin.skinvalue.pullRefreshFragment.ListViewFragment;
 import com.skin.skinvalue.pullRefreshFragment.RecyclerViewFragment;
@@ -50,7 +51,7 @@ public class PullToRefreshActivity extends AppCompatActivity {
                 case 1:
                     return new ListViewFragment();
                 case 2:
-                    return new RecyclerViewFragment();
+                    return new HistoryFragment();
                 default:
                     return new homeFragment();
             }
