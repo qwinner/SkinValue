@@ -67,9 +67,9 @@ public class PullToRefreshActivity extends AppCompatActivity {
                 case 0:
                     return "首页";
                 case 1:
-                    return "历史数据";
+                    return "皮肤曲线";
                 default:
-                    return "设置";
+                    return "历史数据";
             }
         }
     }

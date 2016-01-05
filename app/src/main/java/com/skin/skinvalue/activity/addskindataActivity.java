@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class addskindataActivity extends AppCompatActivity implements View.OnClickListener {
+public class addskindataActivity extends AppCompatActivity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,19 +32,18 @@ public class addskindataActivity extends AppCompatActivity implements View.OnCli
         headList.add("下巴");
         ListView listView = (ListView) this.findViewById(R.id.list_view);
         listView.setAdapter(new SkinCardAdapter(this, R.layout.skindata_item, headList));
+
+        ImageView view = (ImageView)this.findViewById(R.id.commit);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setResult(100);
+                finish();
+            }
+        });
     }
 
-    @Override
-    public void onClick(View v) {
-        int id = v.getId();
-        switch (id) {
-            case R.id.commit:
-                //saveData();
-                break;
-            default:
-                break;
-        }
-    }
+
 
     class SkinCardAdapter extends ArrayAdapter<String> {
 
